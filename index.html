@@ -58,33 +58,33 @@ Change it if you want.</p>
 <p>And here is the code:</p>
 
 <div class="highlight highlight-sh"><pre><span class="nb">cd</span> ~/Desktop
-mkdir goprohero
+<span class="s">mkdir</span> goprohero
 <span class="nb">cd </span>goprohero
-mkdir videos
-mkdir photos
+<span class="s">mkdir</span> videos
+<span class="s">mkdir</span> photos
 <span class="nb">cd </span>photos
-mkdir single
-mkdir timelapse-burst-continuous
+<span class="s">mkdir</span> single
+<span class="s">mkdir</span> timelapse-burst-continuous
 <span class="nb">cd</span> ~/Desktop/goprohero
 <span class="nb">cd </span>videos
-<span class="s">mkdir </span> single
-mkdir chaptered
-mkdir thumbnails
-mkdir lowresvideos
+<span class="s"><span class="s">mkdir</span></span> single
+<span class="s">mkdir</span> chaptered
+<span class="s">mkdir</span> thumbnails
+<span class="s">mkdir</span> lowresvideos
 <span class="nb">cd</span> ~/Desktop/goprohero
 <span class="c"># Repeat these mv commands for each folder in DCIM</span>
-mv /path/to/DCIM/XXXGOPRO/*.MP4 videos
-mv /path/to/DCIM/XXXGOPRO/*.JPG photos
-mv /path/to/DCIM/XXXGOPRO/*.THM ~/Desktop/goprohero/videos/thumbnails
-mv /path/to/DCIM/XXXGOPRO/*.LRV ~/Desktop/goprohero/videos/lowresvideos
+<span class="cp">mv</span> /path/to/DCIM/XXXGOPRO/*.MP4 videos
+<span class="cp">mv</span> /path/to/DCIM/XXXGOPRO/*.JPG photos
+<span class="cp">mv</span> /path/to/DCIM/XXXGOPRO/*.THM ~/Desktop/goprohero/videos/thumbnails
+<span class="cp">mv</span> /path/to/DCIM/XXXGOPRO/*.LRV ~/Desktop/goprohero/videos/lowresvideos
 <span class="nb">cd </span>photos
-mv GOPR*.JPG single
-mv G*.JPG timelapse-burst-continuous
+<span class="cp">mv</span> GOPR*.JPG single
+<span class="cp">mv</span> G*.JPG timelapse-burst-continuous
 <span class="nb">cd</span> ~/Desktop/goprohero
 <span class="nb">cd </span>videos
-mv GOPR*.MP4 single
-<span class="c">#Delete the hash that is at the left of mv if you have chaptered videos</span>
-<span class="c">#mv GP*.MP4 chaptered</span>
+<span class="cp">mv</span> GOPR*.MP4 single
+<span class="c">#Delete the hash that is at the left of <span class="cp">mv</span> if you have chaptered videos</span>
+<span class="c">#<span class="cp">mv</span> GP*.MP4 chaptered</span>
 <span class="nb">echo </span>GoPro Organizer has finished to sort all your epic videos and your awesome photos
 </pre></div>
 
