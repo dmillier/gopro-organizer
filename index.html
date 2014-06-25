@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="GoPro Organizer : A shell script that organizes GoPro videos and photos" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>GoPro Organizer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/KonradIT/gopro-organizer">View on GitHub</a>
+
+          <h1 id="project_title">GoPro Organizer</h1>
+          <h2 id="project_tagline">A shell script that organizes GoPro videos and photos</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/KonradIT/gopro-organizer/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/KonradIT/gopro-organizer/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="gopro-organizer" class="anchor" href="#gopro-organizer"><span class="octicon octicon-link"></span></a>GoPro Organizer</h1>
+
+<p>A shell script that organizes GoPro videos and photos</p>
+
+<h2>
+<a name="the-script" class="anchor" href="#the-script"><span class="octicon octicon-link"></span></a>The script</h2>
+
+<p>Replace <code>/path/to/DCIM/XXXGOPRO/</code> by the path to the GOPRO directory, if you connect your GoPro via USB or connect the SD card to your computer, the path to GOPRO dir should look something like this: <code>/media/konraditurbe/8765-4321/DCIM/100GOPRO/</code> 
+An easy way to get the path is to drop a gopro photo to firefox and copy the path without the filename and the file:// protocol.
+Example:</p>
+
+<pre><code>file:///media/konraditurbe/8765-4321/DCIM/100GOPRO/GOPR0017.JPG
+
+/media/konraditurbe/8765-4321/DCIM/100GOPRO/
+</code></pre>
+
+<p>By default, the directory where all the videos and photos will be moved is called <code>goprohero</code> and will be located in the desktop.
+Change it if you want.</p>
+
+<p>The code has been tested on Ubuntu linux terminal, but it should work for Mac and other linux distros.</p>
+
+<p>A Windows version is coming soon.</p>
+
+<p>And here is the code:</p>
+
+<div class="highlight highlight-sh"><pre><span class="nb">cd</span> ~/Desktop
+mkdir goprohero
+<span class="nb">cd </span>goprohero
+mkdir videos
+mkdir photos
+<span class="nb">cd </span>photos
+mkdir single
+mkdir timelapse-burst-continuous
+<span class="nb">cd</span> ~/Desktop/goprohero
+<span class="nb">cd </span>videos
+mkdir single
+mkdir chaptered
+mkdir thumbnails
+mkdir lowresvideos
+<span class="nb">cd</span> ~/Desktop/goprohero
+<span class="c"># Repeat these mv commands for each folder in DCIM</span>
+mv /path/to/DCIM/XXXGOPRO/*.MP4 videos
+mv /path/to/DCIM/XXXGOPRO/*.JPG photos
+mv /path/to/DCIM/XXXGOPRO/*.THM ~/Desktop/goprohero/videos/thumbnails
+mv /path/to/DCIM/XXXGOPRO/*.LRV ~/Desktop/goprohero/videos/lowresvideos
+<span class="nb">cd </span>photos
+mv GOPR*.JPG single
+mv G*.JPG timelapse-burst-continuous
+<span class="nb">cd</span> ~/Desktop/goprohero
+<span class="nb">cd </span>videos
+mv GOPR*.MP4 single
+<span class="c">#Delete the hash that is at the left of mv if you have chaptered videos</span>
+<span class="c">#mv GP*.MP4 chaptered</span>
+<span class="nb">echo </span>GoPro Organizer has finished to sort all your epic videos and your awesome photos
+</pre></div>
+
+<h2>
+<a name="use" class="anchor" href="#use"><span class="octicon octicon-link"></span></a>Use</h2>
+
+<p>You can click the folder "Zip" to download a zip and open <code>gopro-organizer.sh</code> </p>
+
+<p>Or click this button to copy GoPro Organizer code to clipboard and paste it in a terminal.</p>
+
+<h3>
+<a name="source" class="anchor" href="#source"><span class="octicon octicon-link"></span></a>Source</h3>
+
+<p><a href="http://gopro.com/support/articles/hero3-and-hero3-file-naming-convention">http://gopro.com/support/articles/hero3-and-hero3-file-naming-convention</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">GoPro Organizer maintained by <a href="https://github.com/KonradIT">KonradIT</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
