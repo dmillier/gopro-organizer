@@ -16,6 +16,7 @@ file:///media/konraditurbe/8765-4321/DCIM/100GOPRO/GOPR0017.JPG
 By default, the directory where all the videos and photos will be moved is called ```goprohero``` and will be located in the desktop.
 Change it if you want.
 
+And here is the code:
 ```sh
 cd ~/Desktop
 mkdir goprohero
