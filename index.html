@@ -38,7 +38,16 @@
 
 <h2>
 <a name="the-script" class="anchor" href="#the-script"><span class="octicon octicon-link"></span></a>The script</h2>
-
+<p>The script, if you change the parameters, will move the media stored in a gopro camera (via USB or the SD plugged in the computer) to the desktop to a folder called <b>goprohero</b> (you can change that), it will create two folders inside the main directory, in this case goprohero. The folders are, obviously <b>photos</b> and <b>videos</b>. Inside photos it will create a directory called <b>single</b> for single taken pictures with the photo mode and also it will create a directory called <b>timelapse-burst-continuous</b> for pictures in burst mode, timelapse, and in continuous shot and in video+photo mode. For the folder <b>video</b> it will create four folders: <b>single</b>, for single videos. <b>chaptered</b>, for videos that are split because the recording is lareg or because looping video mode. <b>thumbnails</b>, for the video thumbnail files. And <b>lowresvideos</b>, for the low resolution video files</p>
+<dl>
+<dt><strong>photos</strong></dt>
+<dd>
+<ul>
+<li>single</li>
+<li>timelapse-burst-continuous</li>
+</ul>
+</dd>
+</dl>
 <p>Replace <code>/path/to/DCIM/XXXGOPRO/</code> by the path to the GOPRO directory, if you connect your GoPro via USB (only HERO3 and HERO2 cameras, HERO3+ Not supported over USB!) or connect the SD card to your computer (supported by HERO2, HERO3 and HERO3+), the path to GOPRO dir should look something like this: <code>/media/konraditurbe/8765-4321/DCIM/100GOPRO/</code> 
 An easy way to get the path is to drop a gopro photo to firefox and copy the path without the filename and the file:// protocol.
 Example:</p>
