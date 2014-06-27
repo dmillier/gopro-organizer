@@ -82,36 +82,8 @@ Change it if you want.</p>
 
 <p>And here is the code for Windows:</p>
 
-<div class="highlight highlight-sh"><pre><span class="nb">cd</span> ~/Desktop
-<span class="s">md</span> myproject
-<span class="nb">cd</span> myproject
-<span class="s">md</span> videos
-<span class="s">md</span> photos
-<span class="nb">cd</span> photos
-<span class="s">md</span> single
-<span class="s">md</span> timelapse-burst-continuous
-<span class="nb">cd</span> ~/Desktop/myproject
-<span class="nb">cd</span> videos
-<span class="s">md</span> single
-<span class="s">md</span> chaptered
-<span class="s">md</span> thumbnails
-<span class="s">md</span> lowresvideos
-<span class="nb">cd</span> ~/Desktop/myproject
-# Repeat these <span class="cp">move</span> commands for each folder in DCIM
-<span class="cp">move</span> /path/to/DCIM/XXXGOPRO/*.MP4 videos
-<span class="cp">move</span> /media/konraditurbe/8765-4321/DCIM/100GOPRO/*.JPG photos
-<span class="cp">move</span> /media/konraditurbe/8765-4321/DCIM/100GOPRO/*.THM ~/Desktop/myproject/videos/thumbnails
-<span class="cp">move</span> /media/konraditurbe/8765-4321/DCIM/100GOPRO/*.LRV ~/Desktop/myproject/videos/lowresvideos
-<span class="nb">cd</span> photos
-<span class="cp">move</span> GOPR*.JPG single
-<span class="cp">move</span> G*.JPG timelapse-burst-continuous
-<span class="nb">cd</span> ~/Desktop/myproject
-<span class="nb">cd</span> videos
-<span class="cp">move</span> GOPR*.MP4 single
-#Delete the hash that is at the left of <span class="cp">move</span> if you have chaptered videos
-#<span class="cp">move</span> GP*.MP4 chaptered
-echo GoPro Organizer has finished to sort all your epic videos and your awesome photos
-</pre></div>
+<script src="http://gist-it.appspot.com/http://github.com/konradit/gopro-organizer/blob/master/gopro-organizer-win.sh?footer=0">
+</script>
 
 <h2>
 <a name="use" class="anchor" href="#use"><span class="octicon octicon-link"></span></a>Use</h2>
