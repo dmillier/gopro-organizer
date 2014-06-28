@@ -15,9 +15,9 @@ md lowresvideos
 cd ~/Desktop/goprohero
 # Repeat these cp commands for each folder in DCIM
 cp /path/to/DCIM/XXXGOPRO/*.MP4 videos
-cp /media/konraditurbe/8765-4321/DCIM/100GOPRO/*.JPG photos
-cp /media/konraditurbe/8765-4321/DCIM/100GOPRO/*.THM ~/Desktop/goprohero/videos/thumbnails
-cp /media/konraditurbe/8765-4321/DCIM/100GOPRO/*.LRV ~/Desktop/goprohero/videos/lowresvideos
+cp /path/to/DCIM/XXXGOPRO/*.JPG photos
+cp /path/to/DCIM/XXXGOPRO/*.THM ~/Desktop/goprohero/videos/thumbnails
+cp /path/to/DCIM/XXXGOPRO/*.LRV ~/Desktop/goprohero/videos/lowresvideos
 cd photos
 cp GOPR*.JPG single
 cp G*.JPG timelapse-burst-continuous
